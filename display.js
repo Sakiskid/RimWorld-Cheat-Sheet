@@ -1,4 +1,6 @@
 function displayItemInPopup(item) {
+    let popupEl = $("#popup");
+
     switch(item.type) {
         case "Apparel": 
             displayApparel();
@@ -17,12 +19,23 @@ function displayItemInPopup(item) {
             break;
     }
 
-    function displayApparel() {
-        let popupElappend = $("#popup").append($("<div>"));
-        // $(popupEl).append($("<div>").text());
-        $(popupElappend).text("test!");
+    function appendProperty(propertyName, value) {
+        // Get popup element
 
-        console.log("Apparel!", item);
+        // create div and set text to propertyName
+        let div = $(popupEl).append($("<div>").text(propertyName));
+        // append div and set text to property value
+        $(div).append($("<div>").text(value));
+    }
+
+    function clearPopup() {
+        $(popupEl).empty();
+    }
+
+    function displayApparel() {
+        clearPopup();
+        
+        appendProperty("Name", item.name);
     }
 
     function displayEquipment() {
