@@ -35,7 +35,6 @@ function displayItemInPopup(item) {
     function displayApparel() {
         clearPopup();
         
-        appendProperty("Name", item.name);
     }
 
     function displayEquipment() {

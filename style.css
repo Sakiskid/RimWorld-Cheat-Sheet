@@ -11,7 +11,7 @@ body {
   cursor: pointer;
 }
 
-#popup {
+#popup-container {
   width: 85vw;
   height: 50vh;
   color: #000003;

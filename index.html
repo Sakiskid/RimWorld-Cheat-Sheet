@@ -19,14 +19,32 @@
         </div>
     </div>
 
-    <div id="popup">
-        <div id="popup-name"></div>
-        <div id="popup-description"></div>
-        <div id="popup-img"></div>
-        <div id="popup-type"></div>
-        <div id="popup-subtype"></div>
+    <div id="popup-container">
+        <!-- TODO booleans should be shown with the rimworld checkmark or x-mark -->
+        <!-- TODO percentages should be shown as a slider -->
+        <div id="pop-name">Name: <span></span></div>
+        <div id="pop-description">Description: <span></span></div>
+        <div id="pop-img"></div>
+        <div id="pop-type">Type: <span></span></div>
+        <div id="pop-subtype">Subtype: <span></span></div>
+        <div id="pop-dlc">Royalty DLC? <span></span></div> <!-- royalty dlc has checkmark or x mark (it looks cool!) -->
         <!-- Popup Wrappers will have class .popup-active when active -->
-        <div id="popup-apparel-wrapper"></div>
+        <div id="popup-apparel-wrapper">
+            <div id="pop-app-clothingtype">Clothing Type: <span></span></div>
+            <div id="pop-app-research">Research Required: <span></span></div>
+            <div id="pop-app-special">Special Effect: <span></span></div>
+            <div id="pop-app-fabric">Made with Fabric? <span></span></div>
+            <div id="pop-app-leather">Made with Leather? <span></span></div>
+            <div id="pop-app-protectionsharp">Sharp Protection: <span></span></div>
+            <div id="pop-app-protectionblunt">Blunt Protection: <span></span></div>
+            <div id="pop-app-protectionheat">Heat Protection: <span></span></div>
+            <div id="pop-app-insulationheat">Heat Insulation: <span></span></div>
+            <div id="pop-app-insulationcold">Cold Insulation: <span></span></div>
+            <div id="pop-app-coverage">Covers: <span></span></div>
+            <div id="pop-app-layer">Layer: <span></span></div>
+            <div id="pop-app-worktomake">Work To Make: <span></span></div>
+            <div id="pop-app-resourcestomake">Resources To Make: <span></span></div>
+        </div>
         <div id="popup-equipment-wrapper"></div>
         <div id="popup-materials-wrapper"></div>
         <div id="popup-textiles-wrapper"></div>
