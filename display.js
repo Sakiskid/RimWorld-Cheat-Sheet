@@ -1,3 +1,13 @@
+/*
+Pros / Cons to having a foreach loop (instead of manually inputting properties)
+Pros:
+- Modular
+- Ability to check if property exists
+Cons:
+- Ugly css ids
+- 
+*/
+
 function displayItemInPopup(item) {
     let popupContainerEl = $("#popup\\-container");
 
@@ -34,6 +44,13 @@ function displayItemInPopup(item) {
     }
 
     function displayApparel() {
+        for (prop in item) {
+            
+        }
+        $("#pop\\-app\\-clothingtype span").text(item.clothingType);
+        $("#pop\\-app\\-research span").text(item.researchRequirement);
+        $("#pop\\-app\\-special span").text(item.);
+        $("#pop\\-app\\-fabric span").text(item.name);
         
     }
 
