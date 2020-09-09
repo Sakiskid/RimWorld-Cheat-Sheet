@@ -19,13 +19,34 @@ body {
     }
 }
 
-.details-wrapper {
-
-}
-
 #popup-container {
+    // Layout
+    margin: 0 auto;
     width: 85vw;
-    height: 50vh;
+    height: 80vh;
+    // Style
     color: $clr-black;
     background-color: $clr-blue;
+    border-radius: 4%;
+    border: 2px $clr-white solid;
+
+    .popup-info {
+        padding-top: 2%;
+        margin: 0 5%;
+        font-weight: 600;
+
+        span {
+            font-weight: initial;
+        }
+    }
+
+    #pop-name {
+        text-align: center;
+        font-size: 200%;
+        text-decoration: underline;
+    }
+
+    #pop-description {
+        text-align: center;
+    }
 }

@@ -11,6 +11,14 @@ when displaying apparel,
 - go thru all of the popup-data classes that are under popup-container or popup-active
 */
 
+function clearPopupInfo() {
+    $(".popup-info span").empty();
+    $(".popup-info img").empty();
+    $(".popup-info").css("display", "none");
+}
+
+clearPopupInfo(); // clear popup info on start
+
 function displayItemInPopup(item) {
     displayItem();
 
@@ -32,19 +40,13 @@ function displayItemInPopup(item) {
     //         break;
     // }
 
-    function clearPopup() {
-        $(".popup-info span").empty();
-        $(".popup-info img").empty();
-        $(".popup-info").css("display", "none");
-    }
-
     function displayItem() {
         /* Go through each property for the item,
         Find it's respective element (using data-property)
         then set it's corresponding span element's text.
         If the property is "resourcesToMake" or "imageURL",
         Special care is needed with these, and they are set accordingly */
-        clearPopup();
+        clearPopupInfo();
 
         for (prop in item) {
             // The span element to put the values in
@@ -56,11 +58,11 @@ function displayItemInPopup(item) {
 
             // If it's resourcesToMake, we need to iterate thru the object
             if(prop === "resourcesToMake") {
-                popupInfoEl.empty();
+                popupInfoEl.children("span").empty();
                 for(resource in value) {
                     let material = resource.toString();
                     let count = value[resource].toString();
-                    $(popupInfoEl).append(count + " " + material + " ");
+                    $(popupInfoEl).children("span").append(count + " " + material + " ");
                 }
             }
 

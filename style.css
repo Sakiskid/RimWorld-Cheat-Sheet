@@ -12,8 +12,27 @@ body {
 }
 
 #popup-container {
+  margin: 0 auto;
   width: 85vw;
-  height: 50vh;
+  height: 80vh;
   color: #000003;
   background-color: #85c8f2;
+  border-radius: 4%;
+  border: 2px #f2ece9 solid;
+}
+#popup-container .popup-info {
+  padding-top: 2%;
+  margin: 0 5%;
+  font-weight: 600;
+}
+#popup-container .popup-info span {
+  font-weight: initial;
+}
+#popup-container #pop-name {
+  text-align: center;
+  font-size: 200%;
+  text-decoration: underline;
+}
+#popup-container #pop-description {
+  text-align: center;
 }
