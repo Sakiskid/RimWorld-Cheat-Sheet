@@ -11,6 +11,7 @@ var apparelData = [
         special: "+15% Social Impact",
         fabric: "true",
         leathery: "false",
+        equipDelay: 0.8,
         protection_sharp: 20,
         protection_blunt: 20,
         protection_heat: 20,
@@ -19,7 +20,8 @@ var apparelData = [
         coverage: ["Head", "Left Ear", "Right Ear"],
         layer: "Overhead",
         workToMake: 30,
-        resourcesToMake: 20
+        resourcesToMake: {"Cloth": 20},
+        marketValue: 70,
     },
     {
         name: "Coronet",
@@ -41,6 +43,7 @@ var apparelData = [
         coverage: ["Head", "Left Ear", "Right Ear"],
         layer: "Overhead",
         workToMake: 134,
-        resourcesToMake: 50
+        resourcesToMake: {"Building Materials": 50},
+        marketValue: 123
     }
 ]
