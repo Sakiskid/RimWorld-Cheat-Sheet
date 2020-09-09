@@ -22,29 +22,29 @@
     <div id="popup-container">
         <!-- TODO booleans should be shown with the rimworld checkmark or x-mark -->
         <!-- TODO percentages should be shown as a slider -->
-        <div id="pop-name" data-property="name">Name: <span></span></div>
-        <div id="pop-description" data-property="description">Description: <span></span></div>
-        <div id="pop-img" data-property="imageURL"></div>
-        <div id="pop-type" data-property="type">Type: <span></span></div>
-        <div id="pop-subtype" data-property="subtype">Subtype: <span></span></div>
-        <div id="pop-dlc" data-property="isDLC">Royalty DLC? <span></span></div> <!-- royalty dlc has checkmark or x mark (it looks cool!) -->
+        <div class="popup-info" id="pop-name" data-property="name">Name: <span></span></div>
+        <div class="popup-info" id="pop-description" data-property="description">Description: <span></span></div>
+        <img class="popup-info" id="pop-img" data-property="imageURL" src="" width="64"></img>
+        <div class="popup-info" id="pop-type" data-property="type">Type: <span></span></div>
+        <div class="popup-info" id="pop-subtype" data-property="subtype">Subtype: <span></span></div>
+        <div class="popup-info" id="pop-dlc" data-property="isDLC">Royalty DLC? <span></span></div> <!-- royalty dlc has checkmark or x mark (it looks cool!) -->
         <!-- Popup Wrappers will have class .popup-active when active -->
-        <div id="popup-apparel-wrapper">
-            <div id="pop-app-clothingtype" data-property="clothingType">Clothing Type: <span></span></div>
-            <div id="pop-app-research" data-property="researchRequirement">Research Required: <span></span></div>
-            <div id="pop-app-special" data-property="special">Special Effect: <span></span></div>
-            <div id="pop-app-fabric" data-property="fabric">Made with Fabric? <span></span></div>
-            <div id="pop-app-leather" data-property="leathery">Made with Leather? <span></span></div>
-            <div id="pop-app-protectionsharp" data-property="protectionSharp">Sharp Protection: <span></span></div>
-            <div id="pop-app-protectionblunt" data-property="protectionBlunt">Blunt Protection: <span></span></div>
-            <div id="pop-app-protectionheat" data-property="protectionHeat">Heat Protection: <span></span></div>
-            <div id="pop-app-insulationheat" data-property="insulationHeat">Heat Insulation: <span></span></div>
-            <div id="pop-app-insulationcold" data-property="insulationCold">Cold Insulation: <span></span></div>
-            <div id="pop-app-coverage" data-property="coverage">Covers: <span></span></div>
-            <div id="pop-app-layer" data-property="layer">Layer: <span></span></div>
-            <div id="pop-app-worktomake" data-property="workToMake">Work To Make: <span></span></div>
-            <div id="pop-app-resourcestomake" data-property="resourcesToMake">Resources To Make: <span></span></div>
-            <div id="pop-app-marketvalue" data-property="marketValue">Market Value: <span></span></div>
+        <div class="popup-wrapper-active" id="popup-apparel-wrapper">
+            <div class="popup-info" id="pop-app-clothingtype" data-property="clothingType">Clothing Type: <span></span></div>
+            <div class="popup-info" id="pop-app-research" data-property="researchRequirement">Research Required: <span></span></div>
+            <div class="popup-info" id="pop-app-special" data-property="special">Special Effect: <span></span></div>
+            <div class="popup-info" id="pop-app-fabric" data-property="fabric">Made with Fabric? <span></span></div>
+            <div class="popup-info" id="pop-app-leather" data-property="leathery">Made with Leather? <span></span></div>
+            <div class="popup-info" id="pop-app-protectionsharp" data-property="protectionSharp">Sharp Protection: <span></span></div>
+            <div class="popup-info" id="pop-app-protectionblunt" data-property="protectionBlunt">Blunt Protection: <span></span></div>
+            <div class="popup-info" id="pop-app-protectionheat" data-property="protectionHeat">Heat Protection: <span></span></div>
+            <div class="popup-info" id="pop-app-insulationheat" data-property="insulationHeat">Heat Insulation: <span></span></div>
+            <div class="popup-info" id="pop-app-insulationcold" data-property="insulationCold">Cold Insulation: <span></span></div>
+            <div class="popup-info" id="pop-app-coverage" data-property="coverage">Covers: <span></span></div>
+            <div class="popup-info" id="pop-app-layer" data-property="layer">Layer: <span></span></div>
+            <div class="popup-info" id="pop-app-worktomake" data-property="workToMake">Work To Make: <span></span></div>
+            <div class="popup-info" id="pop-app-resourcestomake" data-property="resourcesToMake">Resources To Make: <span></span></div>
+            <div class="popup-info" id="pop-app-marketvalue" data-property="marketValue">Market Value: <span></span></div>
         </div>
         <div id="popup-equipment-wrapper"></div>
         <div id="popup-materials-wrapper"></div>
