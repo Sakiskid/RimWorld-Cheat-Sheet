@@ -1,4 +1,4 @@
-let materialsData = [
+var materialsData = [
     {
         name: "Wood",
         description: "Wood from trees or other fibrous plants. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch.",

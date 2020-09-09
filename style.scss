@@ -9,9 +9,23 @@ body {
 }
 
 .items-display {
+    display: flex;
+}
 
+.item {
+    img {
+        width: 64px;
+        cursor: pointer;
+    }
 }
 
 .details-wrapper {
 
+}
+
+#popup {
+    width: 85vw;
+    height: 50vh;
+    color: $clr-black;
+    background-color: $clr-blue;
 }

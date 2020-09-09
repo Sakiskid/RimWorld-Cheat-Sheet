@@ -1,3 +1,19 @@
 body {
   background-color: #00142d;
 }
+
+.items-display {
+  display: flex;
+}
+
+.item img {
+  width: 64px;
+  cursor: pointer;
+}
+
+#popup {
+  width: 85vw;
+  height: 50vh;
+  color: #000003;
+  background-color: #85c8f2;
+}

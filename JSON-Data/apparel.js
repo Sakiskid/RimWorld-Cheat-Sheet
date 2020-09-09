@@ -2,10 +2,12 @@ var apparelData = [
     {
         name: "Bowler Hat",
         description: "A good-looking hat which projects a slightly urban, money-loving style. Improves social impact.",
+        imageURL: "https://rimworldwiki.com/images/1/13/BowlerHat.png",
         subtype: "Clothing",
         clothingType: "Headgear",
         isDLC: "false",
         researchRequirement: "Complex Clothing",
+        special: "+15% Social Impact",
         fabric: "true",
         leathery: "false",
         protection_sharp: 20,
@@ -17,5 +19,26 @@ var apparelData = [
         layer: "Overhead",
         workToMake: 30,
         resourcesToMake: 20
+    },
+    {
+        name: "Coronet",
+        description: "A tiny crown-like piece of headwear made of metal. It marks the wearer as a noble with stature.",
+        imageURL: "https://rimworldwiki.com/images/b/b7/Coronet.png",
+        subtype: "Clothing",
+        clothingType: "Headgear",
+        isDLC: "true",
+        researchRequirement: "Royal Apparel",
+        special: "+20% Social Impact",
+        fabric: "false",
+        leathery: "false",
+        protection_sharp: 0,
+        protection_blunt: 0,
+        protection_heat: 0,
+        insulation_heat: 0,
+        insulation_cold: 0,
+        coverage: ["Head", "Left Ear", "Right Ear"],
+        layer: "Overhead",
+        workToMake: 134,
+        resourcesToMake: 50
     }
 ]
