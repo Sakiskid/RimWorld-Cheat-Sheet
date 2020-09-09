@@ -3,6 +3,8 @@ var weaponsData = [
         name: "Assault Rifle",
         description: "A general-purpose gas-operated assault rifle for field or urban combat. It has good range, decent power, and good accuracy.",
         imageURL: "https://rimworldwiki.com/images/e/e0/Assault_Rifle.png",
+        type: "Equipment",
+        subtype: "Weapons",
         class: "Industrial",
         mode: "Burst",
         marketValue: 480,

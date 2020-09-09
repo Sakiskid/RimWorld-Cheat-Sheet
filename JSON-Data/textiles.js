@@ -3,6 +3,7 @@ var textilesData = [
         name: "Alpaca Wool",
         description: "Alpaca wool is gathered by animal handlers from tamed alpacas. Alpaca wool is a very good insulator, and is therefore recommended in clothing like parkas and tuques.",
         imageURL: "https://rimworldwiki.com/images/3/34/Wool.png",
+        type: "Textile",
         subtype: "Fabric",
         armor_sharpFactor: 0.36,
         armor_bluntFactor: 0,

@@ -25,9 +25,10 @@ function populateItemsDisplay() {
 
 function getItemUsingName(name) {
     let item = data.find(item => item.name === name);
-    console.log(item);
-    $("#popup").text(item.name);
+    displayItemInPopup(item);
 }
+
+// ANCHOR Event Listeners
 
 $(document).on("click", ".item", function (event) {
     let name = $(this).attr("data-name");

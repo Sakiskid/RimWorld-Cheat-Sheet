@@ -2,6 +2,7 @@ var materialsData = [
     {
         name: "Wood",
         description: "Wood from trees or other fibrous plants. Useful for building structures, weapons, and even simple prosthetics. A raw stick of wood can be used as a weapon in a pinch.",
+        type: "Material",
         subtype: "Lumber",
         imageURL: "https://rimworldwiki.com/images/d/df/Wood.png",
         armor_blunt: 0.54,
