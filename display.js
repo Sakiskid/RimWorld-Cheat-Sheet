@@ -12,38 +12,30 @@ when displaying apparel,
 */
 
 function displayItemInPopup(item) {
-    let popupContainerEl = $("#popup\\-container");
+    displayItem();
 
-    switch(item.type) {
-        case "Apparel": 
-            displayItem();
-            break;
-        case "Equipment": 
-            displayItem();
-            break;
-        case "Textile": 
-            displayItem();
-            break;
-        case "Material": 
-            displayItem();
-            break;
-        default:
-            console.log("Item type " + item.type + " not found!");
-            break;
-    }
-
-    function appendProperty(propertyName, value) {
-        // TODO if property is null or undefined, then dont append
-        // Get popup element
-
-        // create div and set text to propertyName
-        let div = $(popupContainerEl).append($("<div>").text(propertyName));
-        // append div and set text to property value
-        $(div).append($("<div>").text(value));
-    }
+    // switch(item.type) {
+    //     case "Apparel": 
+    //         displayItem();
+    //         break;
+    //     case "Equipment": 
+    //         displayItem();
+    //         break;
+    //     case "Textile": 
+    //         displayItem();
+    //         break;
+    //     case "Material": 
+    //         displayItem();
+    //         break;
+    //     default:
+    //         console.log("Item type " + item.type + " not found!");
+    //         break;
+    // }
 
     function clearPopup() {
-        
+        $(".popup-info span").empty();
+        $(".popup-info img").empty();
+        $(".popup-info").css("display", "none");
     }
 
     function displayItem() {
@@ -52,40 +44,33 @@ function displayItemInPopup(item) {
         then set it's corresponding span element's text.
         If the property is "resourcesToMake" or "imageURL",
         Special care is needed with these, and they are set accordingly */
+        clearPopup();
+
         for (prop in item) {
             // The span element to put the values in
-            let popupInfoValueEl = $("[data-property='"+prop+"'] span");
+            let popupInfoEl = $("[data-property='"+prop+"']");
             let value = item[prop];
+
+            // Show this property info
+            popupInfoEl.css("display", "block");
 
             // If it's resourcesToMake, we need to iterate thru the object
             if(prop === "resourcesToMake") {
-                popupInfoValueEl.empty();
+                popupInfoEl.empty();
                 for(resource in value) {
                     let material = resource.toString();
                     let count = value[resource].toString();
-                    $(popupInfoValueEl).append(count + " " + material + " ");
+                    $(popupInfoEl).append(count + " " + material + " ");
                 }
             }
 
             // If the property is an image
             else if (prop === "imageURL") {
-                $("[data-property='"+prop+"'").attr("src", value);
+                $(popupInfoEl).attr("src", value);
             }
             else {
-                $(popupInfoValueEl).text(value);
+                $(popupInfoEl).children("span").text(value);
             }
         }
-    }
-
-    function displayEquipment() {
-
-    }
-
-    function displayTextile() {
-        
-    }
-
-    function displayMaterial() {
-
     }
 }
