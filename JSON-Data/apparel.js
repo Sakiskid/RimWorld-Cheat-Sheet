@@ -2,8 +2,7 @@ var apparelData = [
     {
         name: "Bowler Hat",
         description: "A good-looking hat which projects a slightly urban, money-loving style. Improves social impact.",
-        type: "Gear",
-        apparelType: "Clothing",
+        subtype: "Clothing",
         clothingType: "Headgear",
         isDLC: "false",
         researchRequirement: "Complex Clothing",
