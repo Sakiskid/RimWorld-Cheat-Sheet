@@ -7,7 +7,6 @@ var weaponsData = [
         subtype: "Weapons",
         class: "Industrial",
         mode: "Burst",
-        marketValue: 480,
         damage: 11,
         armorPenetration: 16,
         stoppingPower: 0.5,
@@ -27,6 +26,7 @@ var weaponsData = [
         dps_touch: 6.528,
         dps_short: 7.616,
         dps_medium: 7.072,
-        dps_long: 5.984
+        dps_long: 5.984,
+        marketValue: 480
     }
 ]

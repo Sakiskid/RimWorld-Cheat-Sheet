@@ -19,34 +19,76 @@ body {
     }
 }
 
+// ANCHOR Popup and popup info!
+
 #popup-container {
-    // Layout
+    
+
     margin: 0 auto;
     width: 85vw;
-    height: 80vh;
+    height: 85vh;
     // Style
     color: $clr-black;
     background-color: $clr-blue;
     border-radius: 4%;
-    border: 2px $clr-white solid;
+    border: 4px $clr-white ridge;
+}
 
-    .popup-info {
-        padding-top: 2%;
-        margin: 0 5%;
-        font-weight: 600;
+.popup-info {
+    padding-top: 5px;
+    flex-basis: 50%;
+    font-weight: 600;
 
-        span {
-            font-weight: initial;
-        }
+    span {
+        font-weight: initial;
+    }
+}
+
+#popup-info-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100%;
+    margin: 0 5%;
+
+    .p-1 {
+        order: 1;
+    }
+
+    .p-2 {
+        order: 3;
+    }
+
+    .p-3 {
+        order: 5;
+    }
+
+    hr {
+        order: 2;
+        border: 2px inset;
+        height: 2px;
+        border-color: $clr-blue;
+        width: 80%;
     }
 
     #pop-name {
+        // Flex
+        flex-basis: 100%;
+        // Style
         text-align: center;
         font-size: 200%;
         text-decoration: underline;
     }
 
     #pop-description {
+        padding-top: 10px;
         text-align: center;
+        // Flex
+        flex-basis: 100%;
     }
+
+    #pop-img {
+        flex-basis: 64px;
+    }
+
 }

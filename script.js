@@ -30,6 +30,7 @@ function getItemUsingName(name) {
 
 // ANCHOR Event Listeners
 
+// possible to use on("mousover") instead of click
 $(document).on("click", ".item", function (event) {
     let name = $(this).attr("data-name");
     getItemUsingName(name);

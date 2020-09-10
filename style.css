@@ -14,25 +14,56 @@ body {
 #popup-container {
   margin: 0 auto;
   width: 85vw;
-  height: 80vh;
+  height: 85vh;
   color: #000003;
   background-color: #85c8f2;
   border-radius: 4%;
-  border: 2px #f2ece9 solid;
+  border: 4px #f2ece9 ridge;
 }
-#popup-container .popup-info {
-  padding-top: 2%;
-  margin: 0 5%;
+
+.popup-info {
+  padding-top: 5px;
+  flex-basis: 50%;
   font-weight: 600;
 }
-#popup-container .popup-info span {
+.popup-info span {
   font-weight: initial;
 }
-#popup-container #pop-name {
+
+#popup-info-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100%;
+  margin: 0 5%;
+}
+#popup-info-wrapper .p-1 {
+  order: 1;
+}
+#popup-info-wrapper .p-2 {
+  order: 3;
+}
+#popup-info-wrapper .p-3 {
+  order: 5;
+}
+#popup-info-wrapper hr {
+  order: 2;
+  border: 2px inset;
+  height: 2px;
+  border-color: #85c8f2;
+  width: 80%;
+}
+#popup-info-wrapper #pop-name {
+  flex-basis: 100%;
   text-align: center;
   font-size: 200%;
   text-decoration: underline;
 }
-#popup-container #pop-description {
+#popup-info-wrapper #pop-description {
+  padding-top: 10px;
   text-align: center;
+  flex-basis: 100%;
+}
+#popup-info-wrapper #pop-img {
+  flex-basis: 64px;
 }
