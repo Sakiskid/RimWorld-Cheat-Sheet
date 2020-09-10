@@ -34,6 +34,7 @@ function getItemUsingName(name) {
 $(document).on("click", ".item", function (event) {
     let name = $(this).attr("data-name");
     getItemUsingName(name);
+    showPopup();
 });
 
 init();

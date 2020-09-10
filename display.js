@@ -11,6 +11,10 @@ when displaying apparel,
 - go thru all of the popup-data classes that are under popup-container or popup-active
 */
 
+function showPopup() {
+    $("#popup-container").css("display", "block");
+}
+
 function clearPopupInfo() {
     $(".popup-info span").empty();
     $(".popup-info img").empty();

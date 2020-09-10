@@ -8,6 +8,10 @@ body {
     background-color: $clr-dark;
 }
 
+html {
+    height: 100%;
+}
+
 .items-display {
     display: flex;
 }
@@ -22,55 +26,58 @@ body {
 // ANCHOR Popup and popup info!
 
 #popup-container {
-    
+    height: 100vh;
+    width: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    // Style
+    background-color: rgba($color: $clr-black, $alpha: 0.25);
+}
 
-    margin: 0 auto;
+#popup-content-wrapper {
     width: 85vw;
     height: 85vh;
+    // THIS IS THE WRAPPER FOR ALL OF THE INFO IN THE POPUP!
+    display: flex;
+    flex-direction: column;
+    // grid-template-rows: [header] 30% [hr] 1% [detailed] 69% [end];
+    // Layout
+    margin: 0 5%;
     // Style
     color: $clr-black;
     background-color: $clr-blue;
     border-radius: 4%;
     border: 4px $clr-white ridge;
-}
 
-.popup-info {
-    padding-top: 5px;
-    flex-basis: 50%;
-    font-weight: 600;
-
-    span {
-        font-weight: initial;
-    }
-}
-
-#popup-info-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    height: 100%;
-    margin: 0 5%;
-
-    .p-1 {
+    .p-header {
+        // grid-row: header / span detailed;
         order: 1;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
-
-    .p-2 {
-        order: 3;
-    }
-
-    .p-3 {
-        order: 5;
-    }
-
+    
     hr {
         order: 2;
+        // grid-row: hr;
         border: 2px inset;
         height: 2px;
         border-color: $clr-blue;
         width: 80%;
     }
 
+    .p-detailed {
+        // grid-row: detailed / span end;
+        order: 3;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 100%;
+    }
+
+    // Specific ids
     #pop-name {
         // Flex
         flex-basis: 100%;
@@ -81,7 +88,7 @@ body {
     }
 
     #pop-description {
-        padding-top: 10px;
+        margin: 2% 0;
         text-align: center;
         // Flex
         flex-basis: 100%;
@@ -90,5 +97,15 @@ body {
     #pop-img {
         flex-basis: 64px;
     }
+}
 
+.popup-info {
+    padding-top: 5px;
+    flex-basis: 50%;
+    font-weight: 600;
+    width: 10px;
+
+    span {
+        font-weight: initial;
+    }
 }

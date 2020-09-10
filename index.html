@@ -22,13 +22,13 @@
     <div id="popup-container">
         <!-- TODO booleans should be shown with the rimworld checkmark or x-mark -->
         <!-- TODO percentages should be shown as a slider -->
-        <div id="popup-info-wrapper">
-
+        <!-- TODO alphabeticize -->
+        <div id="popup-content-wrapper">
             <!-- The p-1 class here indicates which position in the flexbox it is -->
-            <div class="p-1">
+            <div class="p-header">
                 <div class="popup-info" id="pop-name" data-property="name"><span></span></div>
                 <div class="popup-info" id="pop-description" data-property="description">"<span></span>"</div>
-                <img class="popup-info" id="pop-img" data-property="imageURL" src="" width="64"></img>
+                <!-- <img class="popup-info" id="pop-img" data-property="imageURL" src="" width="64"></img> -->
                 <div class="popup-info" id="pop-type" data-property="type">Type: <span></span></div>
                 <div class="popup-info" id="pop-subtype" data-property="subtype">Subtype: <span></span></div>
                 <div class="popup-info" id="pop-dlc" data-property="isDLC">Royalty DLC? <span></span></div> <!-- royalty dlc has checkmark or x mark (it looks cool!) -->
@@ -39,7 +39,7 @@
 
             <hr>
 
-            <div class="p-3">
+            <div class="p-detailed">
                 <!-- Apparel Info -->
                 <div class="popup-info" id="pop-app-clothingtype" data-property="clothingType">Clothing Type: <span></span></div>
                 <div class="popup-info" id="pop-app-research" data-property="researchRequirement">Research Required: <span></span></div>
